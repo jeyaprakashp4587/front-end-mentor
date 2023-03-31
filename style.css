@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&display=swap');
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-fluid{
+    background: hsl(210, 46%, 95%);
+    width: 100%;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    
+}
+.containers{
+    width: 85%;
+    overflow: hidden;
+    padding: 1rem;
+    /* border: 1px solid red; */
+    display: grid;
+    place-content: center;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 350px 330px;
+    gap: 20px;
+    background: hsl(210, 46%, 95%);
+    height: 90%;
+}
+.box-1{
+    background: hsl(263, 55%, 52%);
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 1;
+    padding: 2rem;
+    border-radius: 1rem;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    position: relative;
+    box-shadow: 1px 1px 10px 8px rgba(128, 125, 125, 0.164);
+}
+#uate{
+   position: absolute;
+   z-index: 1;
+   top: 20px;
+   right: 49px;
+}
+.box-1 h2{
+   color: hsl(0, 0%, 100%);
+   font-weight: 600;
+   line-height: 2.4rem;
+}
+.box-1 p{
+   color: hsl(0, 0%, 81%); 
+   font-size: 14px;  
+}
+.box-2{
+    background: hsl(217, 19%, 35%);
+    padding: 2rem;
+    border-radius: 1rem;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    box-shadow: 1px 1px 10px 8px rgba(128, 125, 125, 0.164);
+}
+.box-2 h2{
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+}
+.box-2 p{
+    font-size: 14px;
+    font-weight: 500;
+    color: hsl(0, 0%, 81%); 
+}
+.box-3{
+    background: hsl(0, 0%, 100%);
+    grid-row: 1  / span 2;
+    grid-column-start: 4;
+    padding: 2rem;
+    border-radius: 1rem;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    box-shadow: 1px 1px 10px 8px rgba(128, 125, 125, 0.164);
+}
+.box-3 h2{
+    color: hsl(217, 19%, 35%);
+   font-weight: 600;
+}
+.box-3 p{
+    font-size: 14px;
+    font-weight: 500;
+    color: hsl(0, 2%, 46%); 
+    font-weight: 500;
+}
+.box-4{
+    background: hsl(0, 0%, 100%);
+    padding: 2rem;
+    border-radius: 1rem;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    box-shadow: 1px 1px 10px 8px rgba(128, 125, 125, 0.164);
+}
+.box-4 h2{
+    color: hsl(217, 19%, 35%);
+   font-weight: 600;
+}
+.box-4 p{
+    font-size: 14px;
+    color: hsl(0, 2%, 46%); 
+    font-weight: 500;
+}
+.box-5{
+   background: hsl(219, 29%, 14%);
+   padding: 2rem;
+   grid-column-start: 2;
+   grid-column-end: 4;
+   border-radius: 1rem;
+   font-family: 'Barlow Semi Condensed', sans-serif;
+   box-shadow: 1px 1px 10px 8px rgba(128, 125, 125, 0.164);
+}
+.box-5 h2{
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+}
+.box-5 p{
+    font-size: 14px;
+    color: hsl(0, 0%, 81%); 
+    font-weight: 500;
+}
+.user{
+    display: flex;
+    align-items: center;
+}
+.name{
+    padding-left: 20px;
+}
+.user img{
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+}
+.user h4{
+    color: hsl(0, 0%, 81%);
+}
+.user h3{
+    color: hsl(210, 2%, 58%);
+}
